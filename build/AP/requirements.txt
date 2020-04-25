@@ -1,0 +1,7 @@
+Django==2.1
+uwsgi==2.0.18
+django-bootstrap4==1.0.1
+urllib3==1.25.3
+PyMySQL==0.9.3
+python-memcached
+#mysqlclient==1.4.4

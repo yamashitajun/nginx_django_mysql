@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+    datadbmaster:
+        build: ./build/datadb
+        ports:
+          - "3306:3306"
+        environment:
+          - MYSQL_MASTER=true
+          - MYSQL_ROOT_PASSWORD=datadbroot
+          - MYSQL_DATABASE=datadb
+          - MYSQL_USER=datadbuser
+          - MYSQL_PASSWORD=datadbpassword
+          - TZ=Asia/Tokyo
+        volumes:
+          - ./datadb:/var/lib/mysql
