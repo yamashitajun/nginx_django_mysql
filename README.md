@@ -1,0 +1,2 @@
+# nginx_django_mysql
+nginx_django_mysql
